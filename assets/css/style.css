@@ -1,0 +1,289 @@
+.pull-right{
+	float: right;
+}
+
+.pull-left{
+	float: left;
+}
+
+.greyish{
+	color: #8a8a8a;
+}
+.inline{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.text-italic{
+	font-style: italic;
+}
+/* end helper */
+
+header{
+	/*background-color: red;	*/
+	overflow: hidden;
+}
+
+.site-logo{
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.burger-nav{
+	display: none;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	vertical-align: middle;
+	padding: 20px 0;
+}
+
+
+nav ul li a{
+	margin: 10px 0px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	/*font-weight: bold;*/
+	padding-bottom: 4px;
+	border-bottom: 3px solid transparent;
+	color: white;
+	transition: border 0.6s;
+
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	border-bottom: 3px solid #F4CCCC;
+	color: #F4CCCC;
+	transition: border 0.6s;
+}
+
+.nav-close{
+	display: none;
+}
+
+#banner{
+	background: linear-gradient( rgb(200, 33, 33, 0.7), rgb(200, 33, 33, 0.4) ),  url('../img/hero-bg.png') ;
+	background-size: cover;
+	background-attachment: fixed; 
+	overflow: hidden;
+	height: 600px;
+}
+
+.banner-info , .phone-div{
+	margin-top: 100px;
+}
+
+.banner-info h1{
+	color: white;
+	font-size: 50px;
+}
+
+.banner-info p{
+	font-size: 22px;
+	font-style: italic;
+	color: white;
+	margin-bottom: 70px;
+	margin-top: 40px;
+}
+
+.banner-info{
+	float: left;
+	width: 50%;
+	padding-right: 30px;
+
+}
+
+.phone-div{
+	float: right;
+}
+.phone{
+	width: 80%;
+	/*position: absolute;*/
+	right: 100px;
+}
+
+.download-btn{
+	background-color: #272822;
+	padding: 20px 40px;
+	color: white;
+	border-radius: 50px;
+	color: white;
+	vertical-align: middle;
+}
+
+.download-btn:hover{
+	text-decoration: none;
+	color: white;
+	background-color: #645555;
+}
+
+.download-btn img{
+	height: 30px;
+	width: auto;
+}
+
+#features h1{
+	font-size: 52px;
+}
+.features-div p{
+	padding: 10px 60px;
+	color: #8a8a8a;
+}
+
+.features-div img{
+	margin-bottom: 40px;
+}
+
+.feature-sub{
+	padding-left: 200px;
+	padding-right: 200px;
+	font-size: 22px;
+}
+
+#clown{
+	background: url("../img/nose-bg.png");
+	background-size: cover;
+}
+.reddish{
+	color: #f45150;
+}
+.clown-info h1{
+	color: white;
+	font-size: 52px;
+}
+
+.clown-info p{
+	font-size: 24px;
+	/*line-height: 30px;*/
+}
+
+#clown a{
+	background-color: #f45150;
+	padding: 20px 30px;
+	color: white;
+	border-radius: 50px;
+	transition: background-color 0.5s;
+
+}
+#clown a:hover{
+	text-decoration: none;
+	color: white;
+	background-color:#c45150;
+	transition: background-color 0.5s;
+}
+
+#copyright .col-md-4{
+	margin: 40px 0;
+}
+footer{
+	background-color: #2e2e38;
+	color: white;
+}
+
+footer h4{
+	font-size: 19px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+footer ul{
+	padding-left: 0;
+	margin-bottom: 40px;
+}
+footer ul li{
+	list-style: none;
+}
+
+.timeago{
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+#copyright{
+	background-color: #d7dedc;
+}
+/*.cp,.ww{*/
+	/*padding-right:20px;*/
+/*}*/
+.cp:after, .ww:after{
+	content: "";
+	/*position: absolute;*/
+	border: 1px solid black;
+	margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 885px){
+	.burger-nav{
+		display: inline-block;
+		width: 40px;
+		height: 31px;
+		position: absolute;
+		top: 16px;
+		right: 10px;
+		cursor: pointer;
+	}
+
+	nav ul{
+		display: none;
+	}
+
+	.banner-info{
+		width: 90%;
+		padding: 0px;
+	}
+	.phone{
+		display: none;
+	}
+	.nav-close{
+		position: absolute;
+		display: block;
+		right: 20px;
+		top: 20px;	
+			border:none;
+		
+	}
+	.nav-close:hover{
+
+		border:none;
+
+	}
+
+	header nav ul.open{
+		background-color: rgba(50,50,50, .9);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		display: block;
+		text-align: center;
+		z-index: 1000;
+	}
+	header nav ul.open li{
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	header nav ul.open a{
+		
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.feature-sub{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+}
